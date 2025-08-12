@@ -1,0 +1,18 @@
+:root {
+  --purple: #6C63FF;
+  --white: #F7F7F7;
+  --black: #252525;
+}
+.containe1{
+  color: var(--purple);
+
+}
+
+.containe2{
+  color: var(--black);
+
+}
+.containe3{
+  color: var(--white);
+
+}
