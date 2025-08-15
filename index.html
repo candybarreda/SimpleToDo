@@ -4,19 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>To Do App</title>
-  <link rel="icon" href="/assets/todoapp.ico" type="image/x-icon"></link>
+  <link rel="icon" href="assets/todoapp.ico" type="image/x-icon"></link>
   <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
-  <script src="/assets/js/main.js"></script>
 </head>
-<body>
-  <div class="containe1">
-    hola
+<body class="light-mode">
+  <div class="container">
+    <h1 class="containe1">TODO LIST</h1>
+    <div class="container-header">
+
+
+
+      <div class="header-item" >
+        <input type="text" class="searcher" placeholder="Search note  ..."  />
+        <div class="imput-text"> <img src="/assets/lupa.svg"></div>
+      </div>
+      <div class="header-item">
+        <select class="button-down" id="down-butt">
+          <option value="">ALL</option>
+        </select>
+        <div class="imput-down"> <img src="/assets/down.svg">
+        </div>
+      </div>
+      <div class="header-item">
+        <div class="button-luna">
+          <button  class="button-mode" id="mode-toggle"></button>
+        </div>
+      </div>
+
+
+    </div>
+    <div class="imput-conta">
+      <div class="imput-container">
+        <div class="imput-check">
+          <input type="checkbox" class="todo-item-checkbox check-box">
+          <p class="todo-item-title">Read recommended book again</p>
+        </div>
+        <hr>
+        <div class="imput-check">
+          <input type="checkbox" class="todo-item-checkbox">
+          <p class="todo-item-title">Vacation planning </p>
+        </div>
+        <hr>
+        <div class="imput-check">
+          <input type="checkbox" class="todo-item-checkbox">
+          <p class="todo-item-title">Cook dinner</p>
+        </div>
+        <hr>
+        <div class="imput-check">
+          <input type="checkbox" class="todo-item-checkbox">
+          <p class="todo-item-title">Sign up for training</p>
+        </div>
+        
+    </div>
+    
+      
+      
+    </div>   
+        
   </div>
-  <div class="containe2">
-    hola
-  </div>
-  <div class="containe3">
-    hola
-  </div>
+ 
+  <script src="/assets/js/main.js"></script>
 </body>
 </html>

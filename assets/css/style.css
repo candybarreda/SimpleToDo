@@ -3,16 +3,177 @@
   --white: #F7F7F7;
   --black: #252525;
 }
-.containe1{
-  color: var(--purple);
-
+*{
+  
+  box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    
+    height: 60vh;
+    margin: 0;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 16px;
 }
 
-.containe2{
-  color: var(--black);
-
+.dark-mode {
+    background-color: var(--black);
+    color: var(--white);
+    
 }
-.containe3{
+#mode-toggle {
+    position: relative;
+    width: 38px;
+    height: 38px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    background-color: var(--purple);
+    color: var(--white);
+    background-image: url(/assets/luna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 5px;
+    border-color: var(--purple);
+}
+#down-butt{
+ 
+  appearance: none;
+  padding: 10px;
+  border: none;
+  width: 85px;
+  height: 38px;
+  border-radius: 5px;
+  border-color: var(--purple);
+}
+.button-down{
+  
+  background-color: var(--purple);
+  border-radius: 5px var(--purple);
   color: var(--white);
+}
+.dark-mode #mode-toggle {
+    background-color: var(--white);
+    color: var(--black);
+    background-image: url(/assets/sol.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+.tachado {
+  text-decoration: line-through;
 
 }
+.imput-container{
+  display: flex;
+  flex-direction: column;
+  
+}
+.container-header{
+  display: flex;
+ 
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  
+}
+button{
+  border-radius: 5px;
+  border-color: var(--purple);
+  color: var(--white);
+  background-color: var(--purple);
+  
+  cursor: grab;
+}
+.imput-check{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 10px 0px 0px;
+  border: var(--purple);
+
+  
+}
+.container{
+  display: flex;
+  flex-direction: column;
+}
+.containe1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imput-conta{
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+
+hr{
+  border: 1px solid var(--purple);
+  width: 100%;
+  margin: 10px auto;
+  
+}
+.button-luna{
+  border-radius: 5px var(--purple);
+  
+}
+
+.todo-item-checkbox {
+  width: 2em;
+  height: 2em;
+  accent-color: var(--purple);
+  border-color: var(--purple);
+  cursor: pointer; 
+  margin: 0;
+}
+
+.todo-item-title{
+  padding: 0 10px;
+  font-weight: bolder;
+}
+
+.todo-item-checkbox:checked + .todo-item-title{
+  color: grey;
+  text-decoration: line-through;
+  border-color: var(--purple);
+ 
+}
+
+.header-item{
+  border-radius: 5px var(--purple);
+  position: relative;
+  padding: 0 8px 0 8px;
+} 
+
+.searcher {
+  font-size: 16px;
+  border-radius: 5px;
+  border-color: var(--purple);
+  width: 60vh;
+  padding: 6px 30px 6px 9px;
+}
+
+.searcher:focus, .searcher:focus-visible{
+  outline-color: var(--purple);
+}
+
+.imput-text{
+  position: absolute;
+  top: 20%;
+  right: 16px;
+
+}
+.imput-down{
+  appearance: none;
+  top: 8px;
+  position: absolute;
+  right: 20px;
+}
+
+
